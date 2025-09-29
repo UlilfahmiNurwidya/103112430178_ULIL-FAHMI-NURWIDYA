@@ -6,9 +6,188 @@
 C++ merupakan bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada awal tahun 1980-an pada Bell Laboratories. C++ merupakan pengembangan dari bahasa C menggunakan penambahan konsep pemrograman berorientasi objek (Object-Oriented Programming / OOP), sehingga dapat digunakan untuk membangun perangkat lunak dari skala kecil hingga besar dengan lebih efisien.C++ tetap menjadi salah satu bahasa pemrograman penting yang digunakan untuk pengembangan berbagai jenis perangkat lunak sampai saat ini.
 ## Guided
 
-### soal 1
+### soal 1 (aritmatika)
+```c++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int W, X, Y;
+    float Z;
+    X = 7;
+    Y = 3;
+    W = 1;
+    Z = (X + Y) / (Y + W);
+    cout << "Nilai z = " << Z << endl;
+    return 0;
+}
+```
+Program tersebut menyediakan beberapa variabel bilangan bulat (W, X, Y) dan satu variabel bilangan desimal (Z). Setelah itu, program memberikan nilai awal pada variabel X = 7, Y = 3, dan W = 1. Selanjutnya, program menghitung nilai Z menggunakan rumus (X + Y) / (Y + W). Karena Z adalah tipe data float, maka hasil dari operasi pembagian akan disimpan dalam bentuk desimal.
+Supaya hasil lebih jelas, program menampilkan nilai Z ke layar menggunakan cout. Dengan cara ini, program memperlihatkan bagaimana operasi aritmatika sederhana dapat dijalankan dengan kombinasi tipe data integer dan float. Struktur program juga sederhana sehingga mudah dipahami, sekaligus menunjukkan konsep dasar deklarasi variabel, pemberian nilai, operasi aritmatika, dan output dalam C++.
+### soal 2 (fungsi)
+```c++
+#include <iostream>
+using namespace std;
 
-aku mengerjakan perulangan
+// Prosedur: hanya menampilkan hasil, tidak mengembalikan nilai
+void tampilkanHasil(double p, double l)
+{
+    cout << "\n=== Hasil Perhitungan ===" << endl;
+    cout << "Panjang : " << p << endl;
+    cout << "Lebar   : " << l << endl;
+    cout << "Luas    : " << p * l << endl;
+    cout << "Keliling: " << 2 * (p + l) << endl;
+}
+
+// Fungsi: mengembalikan nilai luas
+double hitungLuas(double p, double l)
+{
+    return p * l;
+}
+
+// Fungsi: mengembalikan nilai keliling
+double hitungKeliling(double p, double l)
+{
+    return 2 * (p + l);
+}
+
+int main()
+{
+    double panjang, lebar;
+
+    cout << "Masukkan panjang: ";
+    cin >> panjang;
+    cout << "Masukkan lebar  : ";
+    cin >> lebar;
+
+    // Panggil fungsi
+    double luas = hitungLuas(panjang, lebar);
+    double keliling = hitungKeliling(panjang, lebar);
+
+    cout << "\nDihitung dengan fungsi:" << endl;
+    cout << "Luas      = " << luas << endl;
+    cout << "Keliling  = " << keliling << endl;
+
+    // Panggil prosedur
+    tampilkanHasil(panjang, lebar);
+
+    return 0;
+}
+```
+Program tersebut digunakan buat menghitung luas dan keliling persegi panjang berdasarkan input panjang dan lebar dari pengguna. Perhitungan dilakukan dengan dua cara, yaitu melalui fungsi (hitungLuas dan hitungKeliling) yang mengembalikan nilai hasil perhitungan, serta prosedur (tampilkanHasil) yang langsung menampilkan panjang, lebar, luas, dan keliling ke layar. Dengan pendekatan ini, program memperlihatkan perbedaan penggunaan fungsi dan prosedur dalam C++, sekaligus membuat kode lebih rapi, terstruktur, dan mudah dipahami.
+### soal 3 (kondisi)
+```c++
+#include <iostream>
+using namespace std;
+int main()
+{
+    int kode_hari;
+    cout << "Menentukan hari kerja/libur\n"<<endl;
+    cout << "1=Senin 3=Rabu 5=Jumat 7=Minggu "<<endl;
+    cout << "2=Selasa 4=Kamis 6=Sabtu "<<endl;
+    cin >> kode_hari;
+    switch (kode_hari)
+    {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        cout<<"Hari Kerja";
+        break;
+    case 6:
+    case 7:
+        cout<<"Hari Libur";
+        break;
+    default:
+        cout<<"Kode masukan salah!!!";
+    }
+    return 0;
+}
+```
+Program tersebut digunakan untuk menentukan apakah sebuah hari termasuk hari kerja atau hari libur berdasarkan kode angka yang dimasukkan pengguna. Kode hari ditentukan dengan angka 1 sampai 7, di mana 1=Senin, 2=Selasa, 3=Rabu, 4=Kamis, 5=Jumat, 6=Sabtu, dan 7=Minggu. Program menggunakan struktur switch-case untuk mengecek input: jika kode 1–5 maka ditampilkan “Hari Kerja”, jika kode 6 atau 7 ditampilkan “Hari Libur”, sedangkan jika input tidak sesuai rentang 1–7 maka muncul pesan “Kode masukan salah!!!”. Dengan cara ini, program memberikan gambaran sederhana bagaimana logika percabangan switch-case bekerja dalam menentukan kategori berdasarkan input angka.
+### soal 4 (perulangan)
+```c++
+#include <iostream>
+using namespace std;
+// int main()
+// {
+//     int jum;
+//     cout << "jumlah perulangan: ";
+//     cin >> jum;
+//     for (int i = 0; i < jum; i++)
+//     {
+//         cout << "saya sahroni\n";
+//     }
+//     return 1;
+// }
+
+
+// while
+int main()
+{
+    int i = 1;
+    int jum;
+    cin >> jum;
+    do
+    {
+        cout << "bahlil ke-" << (i + 1) << endl;
+        i++;
+    } while (i < jum);
+    return 0;
+}
+```
+Program tersebut digunakan buat menampilkan teks berulang sesuai jumlah yang dimasukkan pengguna. Pertama, user diminta menginput nilai jum sebagai batas perulangan. Program menggunakan struktur perulangan do-while, di mana perintah cout akan dijalankan minimal sekali lalu terus berulang selama nilai i masih lebih kecil dari jum. Setiap perulangan, variabel i bertambah 1 dan teks yang ditampilkan berupa “bahlil ke-” diikuti dengan urutan ke-berapa (dihitung dari i+1). Dengan cara ini, program menunjukkan bagaimana perulangan do-while bekerja, yaitu selalu menjalankan isi perulangan setidaknya sekali meskipun kondisi akhirnya tidak terpenuhi.
+### soal 5 (struct)
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Definisi struct
+struct Mahasiswa {
+    string nama;
+    string nim;
+    float ipk;
+};
+
+int main() {
+
+    Mahasiswa mhs1;
+
+    cout << "Masukkan Nama Mahasiswa: ";
+    getline(cin, mhs1.nama);
+    // cin >> mhs1.nama;
+    cout << "Masukkan NIM Mahasiswa : ";
+    cin >> mhs1.nim;
+    cout << "Masukkan IPK Mahasiswa : ";
+    cin >> mhs1.ipk;
+
+    cout << "\n=== Data Mahasiswa ===" << endl;
+    cout << "Nama : " << mhs1.nama << endl;
+    cout << "NIM  : " << mhs1.nim << endl;
+    cout << "IPK  : " << mhs1.ipk << endl;
+
+    return 0;
+}
+
+```
+Program ini mendemonstrasikan penggunaan struct di C++ untuk menyimpan data mahasiswa. Struct Mahasiswa didefinisikan dengan tiga atribut: nama, nim, dan ipk. Di dalam main(), dibuat sebuah objek mhs1 dari struct tersebut. Program kemudian meminta pengguna untuk mengisi data berupa nama (menggunakan getline agar bisa membaca nama lengkap dengan spasi), NIM, dan IPK. Setelah data dimasukkan, program menampilkan kembali hasil input dalam format rapi di bawah judul Data Mahasiswa. Intinya, program ini menunjukkan bagaimana struct bisa dipakai untuk mengelompokkan beberapa data berbeda tapi masih dalam satu entitas (dalam hal ini, mahasiswa).
+### soal 6 (test)
+```c++
+#include <iostream>
+using namespace std;
+int main()
+{
+    string ch;
+    cout << "Masukkan sebuah karakter: ";
+    // cin >> ch;
+    ch = getchar();  //Menggunakan getchar() untuk membaca satu karakter
+    cout << "Karakter yang Anda masukkan adalah: " << ch << endl;
+    return 0;
+}
+```
+Program ini digunakan untuk membaca satu karakter yang dimasukkan pengguna dan menampilkannya kembali ke layar. Pengguna diminta memasukkan karakter melalui input, kemudian program menggunakan fungsi getchar() untuk menangkap karakter pertama yang diketik. Setelah itu, karakter tersebut ditampilkan dengan cout. Program ini memperlihatkan cara sederhana membaca karakter tunggal dari input dan menampilkannya, meskipun variabel ch bertipe string, sehingga hanya karakter pertama yang dibaca yang akan ditampilkan.
 
 ## Unguided
 
