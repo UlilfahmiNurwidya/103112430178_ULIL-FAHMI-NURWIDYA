@@ -14,8 +14,6 @@ aku mengerjakan perulangan
 
 ### Soal 1
 
-copy paste soal nomor 1 disini
-
 ```c++
 #include <iostream>
 #include <iomanip>
@@ -54,18 +52,62 @@ int main() {
 ```
 >
 
-Penjelasan ttg kode kalian disini
+Program tersebut menerima dua bilangan desimal (float) dari user melalui input. Setelah itu, program melakukan empat operasi aritmatika dasar: penjumlahan, pengurangan, perkalian, dan pembagian.
+Untuk menampilkan hasil program menggunakan fungsi terpisah (tambah, kurang, kali, dan bagi) agar kode lebih terstruktur. Hasil setiap operasi ditampilkan dengan format dua angka di belakang koma menggunakan fixed << setprecision(2) sehingga output terlihat rapi dan konsisten.
+Selain itu, pada operasi pembagian, program memeriksa apakah bilangan kedua bernilai nol. Jika tidak nol, hasil pembagian ditampilkan. Namun jika bernilai nol, program menampilkan pesan khusus “Tidak dapat dilakukan (pembagian dengan nol)” agar tidak terjadi error.
+
 
 ### Soal 2
 
-soal nomor 2A
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
 
-```go
-package main
+string satuanBelasan[] = {
+    "nol", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan",
+    "sepuluh", "sebelas", "dua belas", "tiga belas", "empat belas", "lima belas",
+    "enam belas", "tujuh belas", "delapan belas", "sembilan belas"
+};
 
-func main() {
-	fmt.Println("kode untuk soal nomor 2A")
+string puluhanText[] = {
+    "", "", "dua puluh", "tiga puluh", "empat puluh", "lima puluh",
+    "enam puluh", "tujuh puluh", "delapan puluh", "sembilan puluh"
+};
+
+string angkaKeTulisan(int n) {
+    if (n < 0 || n > 100) {
+        return "Angka di luar rentang.";
+    }
+
+    if (n < 20) {
+        return satuanBelasan[n];
+    }
+    if (n < 100) {
+        int p = n / 10;
+        int s = n % 10;
+        if (s == 0) {
+            return puluhanText[p];
+        }
+        return puluhanText[p] + " " + satuanBelasan[s];
+    }
+    return "seratus";
 }
+
+int main() {
+    int n;
+    cout << "Masukkan bilangan (0 s.d 100): ";
+    if (!(cin >> n)) {
+        cerr << "Input tidak valid." << endl;
+        return 1;
+    }
+
+    cout << "\n" << n << " : " << angkaKeTulisan(n) << endl;
+    cout << "(Contoh: 79 : tujuh puluh sembilan)" << endl;
+
+    return 0;
+}
+
 ```
 
 > Output
@@ -73,22 +115,69 @@ func main() {
 
 penjelasan kode
 
-Kalau adalanjutan di lanjut disini aja
+Program ini meminta sebuah bilangan bulat (0–100) dari pengguna lewat input. Setelah itu, program akan mengubah angka tersebut menjadi tulisan sederhana dalam bahasa Indonesia. Supaya lebih rapi dan mudah dipahami, proses konversi dibuat dalam fungsi terpisah (angkaKeTulisan). Di dalam fungsi ini, angka diproses dengan beberapa kondisi: Jika angka kurang dari 20, langsung diambil dari daftar khusus (0–19). Jika angka antara 20 sampai 99, angka dipisahkan menjadi puluhan dan satuan, lalu digabungkan dalam bentuk tulisan. Jika angka tepat 100, hasilnya langsung dituliskan sebagai “seratus”. Dengan cara ini, kode program lebih terstruktur dan mudah dikembangkan. Selain itu, program juga memeriksa input pengguna agar tetap berada dalam rentang yang benar (0–100). Jika input tidak valid atau di luar batas, program menampilkan pesan khusus agar tidak terjadi error.
 
-soal nomor 2B
+### Soal 3
+```c++
+#include <iostream>
+using namespace std;
 
-```go
-package main
+void cetakSpasi(int jumlah) {
+    for (int i = 0; i < jumlah; i++) {
+        cout << " ";
+    }
+}
+void cetakAngkaMenurun(int batas) {
+    for (int i = batas; i >= 1; i--) {
+        cout << i;
+        if (i > 1) cout << " ";
+    }
+}
+void cetakAngkaNaik(int batas) {
+    for (int i = 1; i <= batas; i++) {
+        cout << i;
+        if (i < batas) cout << " ";
+    }
+}
 
-func main() {
-	fmt.Println("kode untuk soal nomor 2B")
+void cetakPolaMirror(int N) {
+    if (N <= 0) {
+        cout << "Input harus bilangan bulat positif." << endl;
+        return;
+    }
+
+    for (int i = N; i >= 1; i--) {
+        cetakSpasi(N - i);
+        cetakAngkaMenurun(i);
+        cout << " * ";
+        cetakAngkaNaik(i);
+        cout << endl;
+    }
+    cetakSpasi(N);
+    cout << "*" << endl;
+}
+
+int main() {
+    int N;
+    cout << "Masukkan bilangan bulat untuk pola (N): ";
+    if (!(cin >> N)) {
+        cerr << "Input tidak valid. Harap masukkan angka." << endl;
+        return 1;
+    }
+
+    cout << "\nOutput:\n";
+    cetakPolaMirror(N);
+
+    return 0;
 }
 ```
 
 > Output
 > ![Screenshot bagian x](output/screenshot_soal2B.png)
 
-penjelasan bedanya sesuai soal
+Program ini meminta dua bilangan desimal (float) dari pengguna lewat input. Setelah itu, program menjalankan empat operasi aritmatika dasar, yaitu penjumlahan, pengurangan, perkalian, dan pembagian.
+Supaya lebih rapi dan mudah dipahami, setiap operasi dibuat dalam fungsi terpisah (tambah, kurang, kali, dan bagi). Jadi, kode programnya lebih terstruktur dan gampang kalau mau dikembangkan lagi.
+Hasil perhitungan ditampilkan dengan format dua angka di belakang koma menggunakan fixed << setprecision(2). Dengan cara ini, output terlihat konsisten dan tidak berantakan, meskipun hasil perhitungannya berupa angka desimal panjang.
 
 ## Referensi
 
