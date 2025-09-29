@@ -22,6 +22,8 @@ int main()
     return 0;
 }
 ```
+> Output
+> ![Screenshot bagian x](output/ssguided1.png)
 Program tersebut menyediakan beberapa variabel bilangan bulat (W, X, Y) dan satu variabel bilangan desimal (Z). Setelah itu, program memberikan nilai awal pada variabel X = 7, Y = 3, dan W = 1. Selanjutnya, program menghitung nilai Z menggunakan rumus (X + Y) / (Y + W). Karena Z adalah tipe data float, maka hasil dari operasi pembagian akan disimpan dalam bentuk desimal.
 Supaya hasil lebih jelas, program menampilkan nilai Z ke layar menggunakan cout. Dengan cara ini, program memperlihatkan bagaimana operasi aritmatika sederhana dapat dijalankan dengan kombinasi tipe data integer dan float. Struktur program juga sederhana sehingga mudah dipahami, sekaligus menunjukkan konsep dasar deklarasi variabel, pemberian nilai, operasi aritmatika, dan output dalam C++.
 ### soal 2 (fungsi)
@@ -74,6 +76,8 @@ int main()
     return 0;
 }
 ```
+> Output
+> ![Screenshot bagian x](output/ssguided2.png)
 Program tersebut digunakan buat menghitung luas dan keliling persegi panjang berdasarkan input panjang dan lebar dari pengguna. Perhitungan dilakukan dengan dua cara, yaitu melalui fungsi (hitungLuas dan hitungKeliling) yang mengembalikan nilai hasil perhitungan, serta prosedur (tampilkanHasil) yang langsung menampilkan panjang, lebar, luas, dan keliling ke layar. Dengan pendekatan ini, program memperlihatkan perbedaan penggunaan fungsi dan prosedur dalam C++, sekaligus membuat kode lebih rapi, terstruktur, dan mudah dipahami.
 ### soal 3 (kondisi)
 ```c++
@@ -105,6 +109,8 @@ int main()
     return 0;
 }
 ```
+> Output
+> ![Screenshot bagian x](output/ssguided3.png)
 Program tersebut digunakan untuk menentukan apakah sebuah hari termasuk hari kerja atau hari libur berdasarkan kode angka yang dimasukkan pengguna. Kode hari ditentukan dengan angka 1 sampai 7, di mana 1=Senin, 2=Selasa, 3=Rabu, 4=Kamis, 5=Jumat, 6=Sabtu, dan 7=Minggu. Program menggunakan struktur switch-case untuk mengecek input: jika kode 1–5 maka ditampilkan “Hari Kerja”, jika kode 6 atau 7 ditampilkan “Hari Libur”, sedangkan jika input tidak sesuai rentang 1–7 maka muncul pesan “Kode masukan salah!!!”. Dengan cara ini, program memberikan gambaran sederhana bagaimana logika percabangan switch-case bekerja dalam menentukan kategori berdasarkan input angka.
 ### soal 4 (perulangan)
 ```c++
@@ -137,6 +143,8 @@ int main()
     return 0;
 }
 ```
+> Output
+> ![Screenshot bagian x](output/ssguided4.png)
 Program tersebut digunakan buat menampilkan teks berulang sesuai jumlah yang dimasukkan pengguna. Pertama, user diminta menginput nilai jum sebagai batas perulangan. Program menggunakan struktur perulangan do-while, di mana perintah cout akan dijalankan minimal sekali lalu terus berulang selama nilai i masih lebih kecil dari jum. Setiap perulangan, variabel i bertambah 1 dan teks yang ditampilkan berupa “bahlil ke-” diikuti dengan urutan ke-berapa (dihitung dari i+1). Dengan cara ini, program menunjukkan bagaimana perulangan do-while bekerja, yaitu selalu menjalankan isi perulangan setidaknya sekali meskipun kondisi akhirnya tidak terpenuhi.
 ### soal 5 (struct)
 ```c++
@@ -172,6 +180,8 @@ int main() {
 }
 
 ```
+> Output
+> ![Screenshot bagian x](output/ssguided5.png)
 Program ini mendemonstrasikan penggunaan struct di C++ untuk menyimpan data mahasiswa. Struct Mahasiswa didefinisikan dengan tiga atribut: nama, nim, dan ipk. Di dalam main(), dibuat sebuah objek mhs1 dari struct tersebut. Program kemudian meminta pengguna untuk mengisi data berupa nama (menggunakan getline agar bisa membaca nama lengkap dengan spasi), NIM, dan IPK. Setelah data dimasukkan, program menampilkan kembali hasil input dalam format rapi di bawah judul Data Mahasiswa. Intinya, program ini menunjukkan bagaimana struct bisa dipakai untuk mengelompokkan beberapa data berbeda tapi masih dalam satu entitas (dalam hal ini, mahasiswa).
 ### soal 6 (test)
 ```c++
@@ -187,6 +197,8 @@ int main()
     return 0;
 }
 ```
+> Output
+> ![Screenshot bagian x](output/ssguided6.png)
 Program ini digunakan untuk membaca satu karakter yang dimasukkan pengguna dan menampilkannya kembali ke layar. Pengguna diminta memasukkan karakter melalui input, kemudian program menggunakan fungsi getchar() untuk menangkap karakter pertama yang diketik. Setelah itu, karakter tersebut ditampilkan dengan cout. Program ini memperlihatkan cara sederhana membaca karakter tunggal dari input dan menampilkannya, meskipun variabel ch bertipe string, sehingga hanya karakter pertama yang dibaca yang akan ditampilkan.
 
 ## Unguided
