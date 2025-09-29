@@ -51,7 +51,7 @@ int main() {
 
 ```
 > Output
-> !(output/Screenshot (618).png)
+> ![Screenshot bagian x](output/ss_Unguided1.png)
 
 Program tersebut menerima dua bilangan desimal (float) dari user melalui input. Setelah itu, program melakukan empat operasi aritmatika dasar: penjumlahan, pengurangan, perkalian, dan pembagian.
 Untuk menampilkan hasil program menggunakan fungsi terpisah (tambah, kurang, kali, dan bagi) agar kode lebih terstruktur. Hasil setiap operasi ditampilkan dengan format dua angka di belakang koma menggunakan fixed << setprecision(2) sehingga output terlihat rapi dan konsisten.
