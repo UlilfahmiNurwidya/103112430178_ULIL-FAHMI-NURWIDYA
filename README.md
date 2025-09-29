@@ -50,6 +50,8 @@ int main() {
 }
 
 ```
+> output
+> (output/Screenshot (618).png)
 >
 
 Program tersebut menerima dua bilangan desimal (float) dari user melalui input. Setelah itu, program melakukan empat operasi aritmatika dasar: penjumlahan, pengurangan, perkalian, dan pembagian.
