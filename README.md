@@ -112,7 +112,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](output/screenshot_soal2A.png)
+> ![Screenshot bagian x](output/ss_unguided2.png)
 
 penjelasan kode
 
@@ -174,7 +174,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](output/screenshot_soal2B.png)
+> ![Screenshot bagian x](output/ss_unguided3.png)
 
 Program ini meminta dua bilangan desimal (float) dari pengguna lewat input. Setelah itu, program menjalankan empat operasi aritmatika dasar, yaitu penjumlahan, pengurangan, perkalian, dan pembagian.
 Supaya lebih rapi dan mudah dipahami, setiap operasi dibuat dalam fungsi terpisah (tambah, kurang, kali, dan bagi). Jadi, kode programnya lebih terstruktur dan gampang kalau mau dikembangkan lagi.
