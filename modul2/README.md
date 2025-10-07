@@ -31,7 +31,7 @@ void tukar(int *px, int *py)
 
 ```
 > Output
-> ![Screenshot bagian x](output/ssguided1.png)
+> ![Screenshot bagian x](modul2/output/guided1.png)
 
 Program ini digunakan untuk menukar nilai dua variabel (a dan b) menggunakan fungsi dengan parameter pointer (call by address).
 
@@ -60,7 +60,7 @@ void tukar(int &x, int &y)
 
 ```
 > Output
-> ![Screenshot bagian x](output/ssguided2.png)
+> ![Screenshot bagian x](modul2/output/guided2.png)
 
 Program tersebut menukar value dua variabel (a dan b) menggunakan fungsi dengan parameter referensi (&). Karena parameter memakai tanda &, maka variabel yang dikirim ke fungsi tak disalin, namun diakses langsung value aslinya.
 
@@ -108,7 +108,7 @@ int main()
 
 ```
 > Output
-> ![Screenshot bagian x](output/ss_Unguided1.png)
+> ![Screenshot bagian x](modul2/output/unguided1.png)
 
 program tersebut bisa disimpulkan operasi transpose matriks yang dapat dilakukan dengan cara menukar posisi baris menjadi kolom dan kolom menjadi baris menggunakan konsep array dua dimensi dan perulangan bersarang.
 
@@ -137,7 +137,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](output/ss_unguided2.png)
+> ![Screenshot bagian x](modul2/output/unguided2.png)
 
 Dari program ini dapat disimpulkan bahwa penggunaan parameter referensi (&) dalam fungsi C++ memungkinkan sebuah fungsi untuk mengubah nilai asli variabel yang dikirim dari luar fungsi.
 
