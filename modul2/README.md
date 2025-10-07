@@ -11,7 +11,12 @@ Array merupakan kumpulan data dengan nama yang sama dan setiap elemen bertipe da
 #include <iostream>
 using namespace std;
 
-void tukar(int *px, int *py); 
+void tukar(int *px, int *py)
+{
+    int temp = *px;
+    *px = *py;
+    *py = temp;
+}
 
 int main()
 {
@@ -20,13 +25,6 @@ int main()
     tukar(&a, &b);
     cout << "Setelah ditukar: a = " << a << ", b = " << b << endl;
     return 0;
-}
-
-void tukar(int *px, int *py)
-{
-    int temp = *px;
-    *px = *py;
-    *py = temp;
 }
 
 ```
@@ -39,7 +37,12 @@ void tukar(int *px, int *py)
 #include <iostream>
 using namespace std;
 
-void tukar(int &x, int &y);
+void tukar(int &x, int &y)
+{
+    int temp = x;
+    x = y;
+    y = temp;
+}
 
 int main()
 {
@@ -50,12 +53,6 @@ int main()
     return 0;
 }
 
-void tukar(int &x, int &y)
-{
-    int temp = x;
-    x = y;
-    y = temp;
-}
 
 ```
 > Output
