@@ -196,6 +196,8 @@ int main() {
 }
 
 ```
+> Output
+> ![Screenshot bagian x](../modul4/output/guid1.png)
 
 ## Unguided
 
@@ -307,7 +309,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x]()
+> ![Screenshot bagian x](../modul4/output/un1.png)
 
 Program ini menggunakan Single Linked List untuk mengelola antrian pembeli. Setiap Node menyimpan nama, pesanan, dan pointer ke data berikutnya. Pointer `front` menunjuk ke antrian pertama, sedangkan `rear` ke antrian terakhir. Fungsi `tambahAntrian()` menambah data di belakang, `layaniAntrian()` menghapus data paling depan sesuai konsep FIFO, dan `tampilkanAntrian()` menampilkan seluruh antrian. Program ini berjalan interaktif melalui menu sederhana.
 
@@ -387,6 +389,6 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x]()
+> ![Screenshot bagian x](../modul4/output/un2.png)
 
 Program ini menggunakan singly linked list dengan pointer `head` sebagai penanda node pertama. Fungsi `tambahNode()` menambah data di akhir list, `tampilList()` menampilkan isi list, dan `balikList()` membalik urutan node menggunakan tiga pointer bantu (`sebelum`, `sekarang`, `sesudah`). Setelah dibalik, `head` menunjuk ke node terakhir sehingga urutan list terbalik.
