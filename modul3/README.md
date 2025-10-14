@@ -131,7 +131,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%203/jawaban%201.png)
+> ![Screenshot bagian x](../modul3/output/u1.png)
 
 Program C++ ini menyimpan dan menampilkan data mahasiswa (maksimal 10 orang) menggunakan struct Mahasiswa, yang berisi nama, nim, uts, uas, tugas, dan nilaiAkhir. Fungsi hitungNilaiAkhir() menghitung nilai akhir berdasarkan rumus 0.3*UTS + 0.4*UAS + 0.3*Tugas. Prosedur inputMahasiswa() digunakan untuk memasukkan data dan menghitung nilai akhir, sedangkan tampilMahasiswa() menampilkan seluruh data mahasiswa. Di main(), pengguna memasukkan jumlah mahasiswa, input data dilakukan satu per satu, dan hasil ditampilkan di akhir program
 
@@ -192,7 +192,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%203/jawaban%202.png)
+> ![Screenshot bagian x](../modul3/output/u2.png)
 
 Program tersebut menunjukkan penerapan Abstract Data Type (ADT) dalam C++. ADT yang dibuat bernama pelajaran, dengan atribut namaMapel (nama mata pelajaran) dan kodeMapel (kode mata pelajaran). File pelajaran.h berisi definisi tipe data dan deklarasi fungsi, pelajaran.cpp berisi implementasi fungsi untuk membuat objek (create_pelajaran) dan menampilkannya (tampil_pelajaran), sedangkan main.cpp berfungsi sebagai program utama yang membuat objek pelajaran dengan nama “Struktur Data” dan kode “STD”, lalu menampilkannya ke layar.
 
@@ -269,7 +269,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%203/jawaban%203.png))
+> ![Screenshot bagian x](../modul3/output/u3.png))
 
 Program ini digunakan untuk menampilkan dan menukar nilai pada array 2 dimensi serta menukar nilai variabel melalui pointer. Terdapat dua array 3x3, A dan B. Fungsi tampilArray() menampilkan isi array, tukarPosisi() menukar elemen pada posisi tertentu antara dua array, dan tukarPointer() menukar nilai dua variabel melalui pointer. Di main(), program menampilkan kedua array sebelum dan sesudah menukar elemen [1][1], serta menukar nilai variabel x dan y. Program ini memperlihatkan penggunaan fungsi, array 2D, reference, dan pointer di C++.
 
