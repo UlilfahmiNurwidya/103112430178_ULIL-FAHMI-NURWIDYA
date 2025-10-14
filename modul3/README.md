@@ -37,7 +37,7 @@ int main()
 Kode ini mendemonstrasikan Call by Reference, di mana fungsi kuadratkan menerima parameter referensi (int &angka) yang terhubung langsung dengan variabel asli di fungsi main(). Dengan demikian, setiap perubahan yang dilakukan pada angka di dalam fungsi akan langsung memengaruhi nilai asli variabel tersebut.
 
 > Output
-> ![Screenshot bagian x](outputmodul2/Screenshot_guided1.png)
+> ![Screenshot bagian x](modul3/output/guide1.png)
 
 ### guided 2
 ```c++
@@ -70,7 +70,7 @@ void tukar(int *px, int *py)
 ```
 Kode ini menunjukkan Call by Pointer, di mana fungsi 'tukar' menerima alamat memori dari variabel 'a' dan 'b' ('&a', '&b'). Dengan menggunakan operator dereference ('*'), fungsi langsung menukar nilai di alamat tersebut. Akibatnya, nilai asli 'a' dan 'b' di 'main()' berubah dari '10, 20' menjadi '20, 10', membuktikan bahwa fungsi dapat memodifikasi variabel di luar cakupannya.
 > Output
-> ![Screenshot bagian x](outputmodul2/Screenshot_guided2.png)
+> ![Screenshot bagian x](modul3/output/guide2.png)
 
 
 ## Unguided
@@ -128,4 +128,4 @@ int main() {
 >
 Kode program C++ ini berfungsi untuk melakukan **transpose** pada matriks 3×3 dengan membagi tugas ke tiga fungsi utama. Fungsi 'inputMatriks' meminta pengguna memasukkan elemen matriks, 'transposeMatriks' menukar baris dan kolom dengan logika 'hasil[j][i] = asal[i][j], dan 'tampilMatriks' menampilkan hasilnya secara rapi menggunakan 'setw(4)'. Fungsi 'main()' mengatur alur program dengan memanggil ketiga fungsi tersebut secara berurutan: input, proses, dan output.
 > Output
-> ![Screenshot bagian x](outputmodul2/Screenshot_unguided1.png)
+> ![Screenshot bagian x](modul3/output/unguid1.png)
