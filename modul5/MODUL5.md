@@ -187,6 +187,9 @@ int main() {
 }
 ```
 
+> Output
+> ![Screenshot bagian x](../modul5/output/G1.png)
+
 ### SEARCHING.CPP
 ```go
 #include <iostream>
@@ -431,6 +434,8 @@ int main() {
     return 0;
 }
 ```
+> Output
+> ![Screenshot bagian x](../modul5/output/G2.png)
 
 ## Unguided
 
@@ -593,9 +598,8 @@ int main() {
 }
 
 ```
-
 > Output
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%205/jawaban%201.png)
+> ![Screenshot bagian x](../modul5/output/soal1.png)
 
 Program di atas adalah simulasi antrian pembeli menggunakan **linked list** dalam C++. Setiap pembeli disimpan dalam node yang berisi nama, pesanan, dan penunjuk ke pembeli berikutnya. Dua pointer, front dan rear, digunakan untuk menandai awal dan akhir antrian. Fungsi utamanya yaitu tambahAntrian() untuk menambah pembeli, layaniAntrian() untuk melayani pembeli terdepan, tampilAntrian() untuk menampilkan seluruh antrian, dan cariPembeli() untuk mencari pembeli berdasarkan nama. Program ini menerapkan konsep **FIFO (First In First Out)**, di mana pembeli yang datang lebih dulu akan dilayani lebih dulu.
 
@@ -811,7 +815,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%205/jawaban%202.png)
+> ![Screenshot bagian x](../modul5/output/soal2.png)
 
 Program di atas adalah simulasi antrian pembeli menggunakan **linked list** dalam C++. Setiap pembeli disimpan sebagai node yang berisi nama, pesanan, dan penunjuk ke pembeli berikutnya. Pointer front menandai antrian terdepan, sedangkan rear menandai yang terakhir. Program ini memiliki fitur untuk menambah antrian, melayani pembeli, menampilkan daftar antrian, dan mencari pembeli berdasarkan nama. Prosesnya mengikuti konsep **FIFO (First In First Out)**, di mana pembeli yang datang lebih dulu akan dilayani lebih dulu.
 
