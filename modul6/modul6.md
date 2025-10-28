@@ -521,9 +521,9 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x]()
+> ![Screenshot bagian x](../modul6/otput/MM6.png)
 
-Program Di atas adalah
+Program tersebut adalah implementasi doubly linked list buat menyimpan data kendaraan yang terdiri dari nomor polisi, warna, dan tahun pembuatan. Program tersebut mempunyai fitur buat menambahkan data di akhir list, menampilkan seluruh data, mencari data berdasarkan nomor polisi, dan menghapus data pertama dan data setelah elemen tertentu. Struktur list menggunakan pointer ganda (next dan prev), jadi memungkinkan pergerakan dua arah. Lewat fungsi-fungsi seperti insertLast, deleteFirst, dan deleteAfter, program bisa memanipulasi isi list dengan dinamis tanpa menggeser data lain.
 
 ## Referensi
 1. https://www.w3schools.com/dsa/dsa_theory_linkedlists.php
