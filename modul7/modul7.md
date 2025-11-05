@@ -213,12 +213,12 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%207/jawaban%201.png)
+> ![Screenshot bagian x](../modul7/output/soal1.png)
 
 Pada program di bikin sebuah ADT Stack yang mengimplementasikan menggunakan array dengan atribut info sebagai penyimpan data dan top sebagai penanda elemen teratas. Fungsi createStack() menginisialisasi stack dalam keadaan kosong dengan top = -1. Operasi push() digunakan untuk menambahkan elemen baru ke bagian atas stack selama tidak penuh, sedangkan pop() menghapus dan mengembalikan elemen teratas jika stack tidak kosong. Prosedur printInfo() berfungsi menampilkan isi stack dari elemen paling atas hingga paling bawah. Selain itu, prosedur balikStack() membalik urutan elemen dengan memanfaatkan stack sementara sehingga susunan data menjadi terbalik. Secara keseluruhan, stack pada program ini bekerja dengan prinsip LIFO (Last In First Out).
 
 ### Soal 2
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%207/soal%202.png)
+<img width="716" height="574" alt="image" src="https://github.com/user-attachments/assets/93c2e49b-328f-4d48-9a56-552dcaeca332" />
 
 ### stack.h
 ```go
@@ -352,12 +352,12 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%207/jawaban%202.png)
+> ![Screenshot bagian x](../modul7/output/soal2.png)
 
 Pada program kedua, ditambahkan prosedur pushAscending() untuk menjaga agar elemen stack tetap tersusun secara ascending dari bawah ke atas setiap kali data baru dimasukkan. Prosedur ini memanfaatkan stack sementara untuk menampung elemen yang lebih besar dari nilai yang akan disisipkan, kemudian data baru dipush ke stack utama dan elemen sementara dikembalikan lagi. Dengan cara tersebut, urutan ascending tetap terjaga meskipun proses penyisipan dilakukan berkali-kali. Saat ditampilkan dengan printInfo(), susunan terlihat seperti descending dari atas ke bawah, tetapi sebenarnya ascending dari bawah ke atas.
 
 ### Soal 3
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%207/soal%203.png)
+<img width="772" height="328" alt="image" src="https://github.com/user-attachments/assets/f410d0ae-e7de-4cc7-9ee2-2d80cf4b7e95" />
 
 ### stack.h
 ```go
@@ -479,7 +479,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%207/jawaban%203.png)
+> ![Screenshot bagian x](../modul7/output/soal3.png)
 
 Pada program ketiga, ditambahkan prosedur getInputStream() yang membaca input pengguna karakter per karakter hingga menekan ENTER. Jika karakter berupa angka, maka dikonversi menjadi integer dan dimasukkan ke stack menggunakan push(). Dengan cara ini, pengguna dapat memasukkan deretan angka seperti string (misal 4729601), dan angka-angka tersebut tersimpan secara berurutan di stack. Prosedur ini membuat pengisian stack lebih fleksibel dan praktis.
 
