@@ -128,7 +128,7 @@ int main()
 ```
 
 > Output
-> ![Screenshot bagian x](Output/Guided1.png)
+> ![Screenshot bagian x](../modul13/output/1.png)
 
 Program ini mendemonstrasikan Multi Linked List dengan struktur one-to-many. Dua node induk berfungsi sebagai entitas utama yang masing-masing memiliki daftar node anak terpisah, merepresentasikan hubungan hierarkis (seperti departemen dan pegawainya).
 
@@ -401,7 +401,7 @@ int main(){
 }
 ```
 > Output
-> ![Screenshot bagian x](Output/soal2.png)
+> ![Screenshot bagian x](../modul13/output/2.png)
 
 Program tersebut digunakan untuk mengimplementasikan struktur data Multi Linked List, yang terdiri dari list induk dan list anak di mana setiap elemen induk dapat memiliki beberapa elemen anak. Program ini menyediakan fungsi untuk membuat list, menambah dan menghapus data induk maupun anak, serta menampilkan seluruh isi data beserta hubungannya.
 
@@ -649,7 +649,7 @@ int main(){
 ```
 
 > Output
-> ![Screenshot bagian x](Output/soal3.png)
+> ![Screenshot bagian x](../modul13/output/3.png)
 
 Program circular linked list tersebut mengimplementasikan Circular Linked List untuk menyimpan data mahasiswa yang terdiri dari nama, NIM, jenis kelamin, dan IPK. Pada struktur ini, setiap node memiliki satu pointer yang menunjuk ke node berikutnya, dan node terakhir akan menunjuk kembali ke node pertama sehingga membentuk list melingkar. Program menyediakan operasi dasar seperti membuat list, menambah data di awal, di akhir, dan setelah node tertentu, menghapus data, mencari data mahasiswa berdasarkan NIM, serta menampilkan seluruh isi list.
 
