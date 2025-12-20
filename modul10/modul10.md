@@ -201,7 +201,7 @@ int main()
 
 > Output
 > 
-> ![Screenshot bagian x](Output/Guided.png)
+> ![Screenshot bagian x](../modul10/output/1.png)
 
 Program ini mengimplementasikan Binary Search Tree (BST) lengkap dalam C++ dengan fitur CRUD (Create, Read, Update, Delete). Program mampu menangani penghapusan node di berbagai kondisi (0, 1, atau 2 anak) serta menjaga integritas struktur pohon saat pembaruan data. Untuk verifikasi, tersedia tiga teknik penelusuran: Pre-Order, In-Order, dan Post-Order.
 
@@ -351,7 +351,7 @@ int main() {
 ```
 > Output soal 1,2,3
 > 
-> ![Screenshot bagian x](Output/Output1.2.3png)
+> ![Screenshot bagian x](../modul10/output/2.png)
 
 Program ini digunakan untuk membuat struktur data Binary Search Tree (BST) menggunakan C++ dengan konsep linked list, di mana setiap node memiliki data serta dua pointer ke anak kiri dan kanan. Data dimasukkan secara rekursif sehingga nilai yang lebih kecil ditempatkan di sisi kiri dan nilai yang lebih besar di sisi kanan, sesuai aturan BST. Program menyediakan tiga cara penelusuran pohon, yaitu In-Order, Pre-Order, dan Post-Order, untuk menampilkan data dengan urutan yang berbeda.
 ## Referensi
