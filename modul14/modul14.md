@@ -484,12 +484,15 @@ int main() {
 
 ```
 > Output 
-> ![Screenshot bagian x](https://github.com/Nashiw/Laporan-Praktikum/blob/main/Modul%2014/jawaban%20123.png)
+> ![Screenshot bagian x](../modul14/output/1.png)
 
 Program ini mengimplementasikan **struktur data graph tak berarah (undirected graph)** menggunakan **adjacency list** yang direpresentasikan dengan **linked list**, di mana setiap simpul (node) menyimpan informasi karakter, status kunjungan (visited), serta daftar sisi (edge) yang terhubung dengannya. Graph dibuat dengan fungsi CreateGraph, simpul ditambahkan menggunakan InsertNode, dan hubungan antar simpul dibentuk melalui ConnectNode. Program juga menyediakan fungsi **DFS (Depth First Search)** yang bekerja secara rekursif dengan menelusuri simpul sedalam mungkin sebelum berpindah, serta **BFS (Breadth First Search)** yang menggunakan **queue** untuk menelusuri graph secara melebar berdasarkan level. Sebelum traversal dilakukan, fungsi ResetVisited dipanggil agar setiap simpul dapat dikunjungi kembali. Pada main, graph diisi dengan simpul A sampai G, dihubungkan sesuai struktur yang ditentukan, lalu ditampilkan representasinya serta hasil traversal DFS dan BFS dari simpul awal tertentu.
 
 ## Referensi
 1.GeeksforGeeks: Graph and its representations https://www.geeksforgeeks.org/graph-and-its-representations/
+
 2.GeeksforGeeks: Depth First Search or DFS for a Graph https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+
 3.GeeksforGeeks: Breadth First Search or BFS for a Graph https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+
 4.Programiz: Graph Data Structure https://www.programiz.com/dsa/graph
